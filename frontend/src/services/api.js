@@ -3,7 +3,8 @@
  * Handles prediction endpoints, image uploads, RAG chatbot, authentication, and history.
  */
 
-const API_BASE = '/api';
+// Support custom remote backend in production (e.g. Render / Railway) or local proxy
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
 
 function getAuthHeader() {
   const token = localStorage.getItem('oncorisk_token');

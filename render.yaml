@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: oncorisk
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ENVIRONMENT
+        value: production
+      - key: PORT
+        value: 8000
