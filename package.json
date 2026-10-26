@@ -1,0 +1,27 @@
+{
+  "name": "oncorisk-platform",
+  "version": "1.0.0",
+  "description": "OncoRisk: AI-powered cancer risk assessment and early-screening awareness platform",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "backend": "uvicorn backend.main:app --reload --port 8000",
+    "test:backend": "python3 backend/test_api.py",
+    "train:ml": "python3 ml/train_models.py",
+    "seed:db": "python3 -m backend.seed_data"
+  },
+  "keywords": [
+    "cancer-screening",
+    "risk-assessment",
+    "machine-learning",
+    "healthcare",
+    "react",
+    "fastapi",
+    "recharts",
+    "shap"
+  ],
+  "author": "OncoRisk Team",
+  "license": "MIT"
+}

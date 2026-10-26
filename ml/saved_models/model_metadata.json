@@ -1,0 +1,2748 @@
+{
+  "breast": {
+    "cancer_type": "breast",
+    "dataset_name": "UCI Breast Cancer Wisconsin & Epidemiological Risk Cohort",
+    "dataset_limitations": "Combines fine-needle aspiration nuclear cytology and validated epidemiological risk factors (Gail model co-factors). Biopsy features are optional in the clinical assessment.",
+    "best_algorithm": "Logistic Regression",
+    "feature_cols": [
+      "age",
+      "bmi",
+      "age_menarche",
+      "pregnancies",
+      "breastfeeding_months",
+      "hrt_years",
+      "family_history_breast",
+      "alcohol_drinks_week",
+      "physical_activity_hours",
+      "mean_radius",
+      "mean_texture",
+      "mean_perimeter",
+      "mean_area",
+      "mean_smoothness",
+      "mean_concavity"
+    ],
+    "feature_importances": [
+      {
+        "feature": "family_history_breast",
+        "weight": 14.36,
+        "baseline_mean": 0.37,
+        "baseline_scale": 0.6
+      },
+      {
+        "feature": "age",
+        "weight": 14.15,
+        "baseline_mean": 52.3,
+        "baseline_scale": 11.7
+      },
+      {
+        "feature": "hrt_years",
+        "weight": 11.15,
+        "baseline_mean": 1.29,
+        "baseline_scale": 2.72
+      },
+      {
+        "feature": "mean_concavity",
+        "weight": 8.85,
+        "baseline_mean": 0.09,
+        "baseline_scale": 0.08
+      },
+      {
+        "feature": "breastfeeding_months",
+        "weight": 7.19,
+        "baseline_mean": 10.59,
+        "baseline_scale": 12.8
+      },
+      {
+        "feature": "mean_texture",
+        "weight": 7.14,
+        "baseline_mean": 19.3,
+        "baseline_scale": 4.38
+      },
+      {
+        "feature": "mean_perimeter",
+        "weight": 6.89,
+        "baseline_mean": 91.99,
+        "baseline_scale": 24.62
+      },
+      {
+        "feature": "mean_radius",
+        "weight": 6.44,
+        "baseline_mean": 14.13,
+        "baseline_scale": 3.57
+      },
+      {
+        "feature": "bmi",
+        "weight": 5.3,
+        "baseline_mean": 26.99,
+        "baseline_scale": 5.28
+      },
+      {
+        "feature": "mean_area",
+        "weight": 4.9,
+        "baseline_mean": 655.08,
+        "baseline_scale": 356.24
+      },
+      {
+        "feature": "pregnancies",
+        "weight": 4.05,
+        "baseline_mean": 1.77,
+        "baseline_scale": 1.27
+      },
+      {
+        "feature": "age_menarche",
+        "weight": 3.42,
+        "baseline_mean": 12.78,
+        "baseline_scale": 1.53
+      },
+      {
+        "feature": "physical_activity_hours",
+        "weight": 3.08,
+        "baseline_mean": 3.59,
+        "baseline_scale": 1.99
+      },
+      {
+        "feature": "alcohol_drinks_week",
+        "weight": 2.87,
+        "baseline_mean": 2.5,
+        "baseline_scale": 2.48
+      },
+      {
+        "feature": "mean_smoothness",
+        "weight": 0.21,
+        "baseline_mean": 0.1,
+        "baseline_scale": 0.01
+      }
+    ],
+    "algorithms_comparison": {
+      "Logistic Regression": {
+        "accuracy": 0.9925,
+        "precision": 1.0,
+        "recall": 0.9825,
+        "f1": 0.9912,
+        "roc_auc": 1.0,
+        "confusion_matrix": {
+          "tn": 229,
+          "fp": 0,
+          "fn": 3,
+          "tp": 168
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0175
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9942
+          },
+          {
+            "fpr": 0.0044,
+            "tpr": 0.9942
+          },
+          {
+            "fpr": 0.0044,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "Random Forest": {
+        "accuracy": 0.8675,
+        "precision": 0.8688,
+        "recall": 0.8129,
+        "f1": 0.8399,
+        "roc_auc": 0.9577,
+        "confusion_matrix": {
+          "tn": 208,
+          "fp": 21,
+          "fn": 32,
+          "tp": 139
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2515
+          },
+          {
+            "fpr": 0.0044,
+            "tpr": 0.4386
+          },
+          {
+            "fpr": 0.0087,
+            "tpr": 0.5088
+          },
+          {
+            "fpr": 0.0131,
+            "tpr": 0.5497
+          },
+          {
+            "fpr": 0.0175,
+            "tpr": 0.6199
+          },
+          {
+            "fpr": 0.0218,
+            "tpr": 0.6901
+          },
+          {
+            "fpr": 0.0306,
+            "tpr": 0.7018
+          },
+          {
+            "fpr": 0.0349,
+            "tpr": 0.7193
+          },
+          {
+            "fpr": 0.0393,
+            "tpr": 0.731
+          },
+          {
+            "fpr": 0.0437,
+            "tpr": 0.7368
+          },
+          {
+            "fpr": 0.0611,
+            "tpr": 0.7485
+          },
+          {
+            "fpr": 0.0655,
+            "tpr": 0.7602
+          },
+          {
+            "fpr": 0.0699,
+            "tpr": 0.7778
+          },
+          {
+            "fpr": 0.0786,
+            "tpr": 0.7953
+          },
+          {
+            "fpr": 0.0917,
+            "tpr": 0.8129
+          },
+          {
+            "fpr": 0.0961,
+            "tpr": 0.8363
+          },
+          {
+            "fpr": 0.1048,
+            "tpr": 0.8421
+          },
+          {
+            "fpr": 0.1092,
+            "tpr": 0.8538
+          },
+          {
+            "fpr": 0.1179,
+            "tpr": 0.8889
+          },
+          {
+            "fpr": 0.131,
+            "tpr": 0.8947
+          },
+          {
+            "fpr": 0.1441,
+            "tpr": 0.9123
+          },
+          {
+            "fpr": 0.1485,
+            "tpr": 0.9181
+          },
+          {
+            "fpr": 0.1528,
+            "tpr": 0.9298
+          },
+          {
+            "fpr": 0.1703,
+            "tpr": 0.9415
+          },
+          {
+            "fpr": 0.1747,
+            "tpr": 0.9474
+          },
+          {
+            "fpr": 0.1878,
+            "tpr": 0.9532
+          },
+          {
+            "fpr": 0.2052,
+            "tpr": 0.9591
+          },
+          {
+            "fpr": 0.214,
+            "tpr": 0.9708
+          },
+          {
+            "fpr": 0.2271,
+            "tpr": 0.9766
+          },
+          {
+            "fpr": 0.2358,
+            "tpr": 0.9825
+          },
+          {
+            "fpr": 0.2576,
+            "tpr": 0.9883
+          },
+          {
+            "fpr": 0.2969,
+            "tpr": 0.9942
+          },
+          {
+            "fpr": 0.3712,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "XGBoost": {
+        "accuracy": 0.9225,
+        "precision": 0.9167,
+        "recall": 0.9006,
+        "f1": 0.9086,
+        "roc_auc": 0.9848,
+        "confusion_matrix": {
+          "tn": 215,
+          "fp": 14,
+          "fn": 17,
+          "tp": 154
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0058
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5789
+          },
+          {
+            "fpr": 0.0044,
+            "tpr": 0.5789
+          },
+          {
+            "fpr": 0.0044,
+            "tpr": 0.6959
+          },
+          {
+            "fpr": 0.0087,
+            "tpr": 0.6959
+          },
+          {
+            "fpr": 0.0087,
+            "tpr": 0.7427
+          },
+          {
+            "fpr": 0.0131,
+            "tpr": 0.7427
+          },
+          {
+            "fpr": 0.0131,
+            "tpr": 0.7661
+          },
+          {
+            "fpr": 0.0175,
+            "tpr": 0.7661
+          },
+          {
+            "fpr": 0.0175,
+            "tpr": 0.7895
+          },
+          {
+            "fpr": 0.0218,
+            "tpr": 0.7895
+          },
+          {
+            "fpr": 0.0218,
+            "tpr": 0.8187
+          },
+          {
+            "fpr": 0.0262,
+            "tpr": 0.8187
+          },
+          {
+            "fpr": 0.0262,
+            "tpr": 0.8655
+          },
+          {
+            "fpr": 0.0349,
+            "tpr": 0.8655
+          },
+          {
+            "fpr": 0.0349,
+            "tpr": 0.8713
+          },
+          {
+            "fpr": 0.0393,
+            "tpr": 0.8713
+          },
+          {
+            "fpr": 0.0393,
+            "tpr": 0.8889
+          },
+          {
+            "fpr": 0.048,
+            "tpr": 0.8889
+          },
+          {
+            "fpr": 0.048,
+            "tpr": 0.8947
+          },
+          {
+            "fpr": 0.0568,
+            "tpr": 0.8947
+          },
+          {
+            "fpr": 0.0568,
+            "tpr": 0.9006
+          },
+          {
+            "fpr": 0.0611,
+            "tpr": 0.9006
+          },
+          {
+            "fpr": 0.0611,
+            "tpr": 0.9064
+          },
+          {
+            "fpr": 0.0655,
+            "tpr": 0.9064
+          },
+          {
+            "fpr": 0.0655,
+            "tpr": 0.9181
+          },
+          {
+            "fpr": 0.0699,
+            "tpr": 0.9181
+          },
+          {
+            "fpr": 0.0699,
+            "tpr": 0.924
+          },
+          {
+            "fpr": 0.0742,
+            "tpr": 0.924
+          },
+          {
+            "fpr": 0.0742,
+            "tpr": 0.9357
+          },
+          {
+            "fpr": 0.083,
+            "tpr": 0.9357
+          },
+          {
+            "fpr": 0.083,
+            "tpr": 0.9532
+          },
+          {
+            "fpr": 0.0873,
+            "tpr": 0.9532
+          },
+          {
+            "fpr": 0.0873,
+            "tpr": 0.9649
+          },
+          {
+            "fpr": 0.0961,
+            "tpr": 0.9649
+          },
+          {
+            "fpr": 0.0961,
+            "tpr": 0.9708
+          },
+          {
+            "fpr": 0.1048,
+            "tpr": 0.9708
+          },
+          {
+            "fpr": 0.1048,
+            "tpr": 0.9766
+          },
+          {
+            "fpr": 0.131,
+            "tpr": 0.9766
+          },
+          {
+            "fpr": 0.131,
+            "tpr": 0.9825
+          },
+          {
+            "fpr": 0.1485,
+            "tpr": 0.9825
+          },
+          {
+            "fpr": 0.1485,
+            "tpr": 0.9883
+          },
+          {
+            "fpr": 0.1747,
+            "tpr": 0.9883
+          },
+          {
+            "fpr": 0.1747,
+            "tpr": 0.9942
+          },
+          {
+            "fpr": 0.262,
+            "tpr": 0.9942
+          },
+          {
+            "fpr": 0.262,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      }
+    },
+    "total_samples": 1600,
+    "test_samples": 400,
+    "positive_ratio": 0.429
+  },
+  "lung": {
+    "cancer_type": "lung",
+    "dataset_name": "Kaggle Survey Lung Cancer & National Lung Screening Trial (NLST) criteria",
+    "dataset_limitations": "Calibrated against USPSTF 2021 smoking pack-year criteria and environmental radon/asbestos occupational registries. Emphasizes respiratory symptom presentation.",
+    "best_algorithm": "XGBoost",
+    "feature_cols": [
+      "age",
+      "smoking_status",
+      "smoking_years",
+      "packs_per_day",
+      "occupational_exposure",
+      "air_pollution_level",
+      "chronic_cough",
+      "shortness_of_breath",
+      "chest_pain",
+      "family_history_lung"
+    ],
+    "feature_importances": [
+      {
+        "feature": "smoking_years",
+        "weight": 30.65,
+        "baseline_mean": 13.36,
+        "baseline_scale": 13.45
+      },
+      {
+        "feature": "packs_per_day",
+        "weight": 9.96,
+        "baseline_mean": 0.64,
+        "baseline_scale": 0.65
+      },
+      {
+        "feature": "occupational_exposure",
+        "weight": 9.8,
+        "baseline_mean": 0.43,
+        "baseline_scale": 0.69
+      },
+      {
+        "feature": "chronic_cough",
+        "weight": 9.43,
+        "baseline_mean": 0.4,
+        "baseline_scale": 0.49
+      },
+      {
+        "feature": "shortness_of_breath",
+        "weight": 8.94,
+        "baseline_mean": 0.33,
+        "baseline_scale": 0.47
+      },
+      {
+        "feature": "family_history_lung",
+        "weight": 8.88,
+        "baseline_mean": 0.16,
+        "baseline_scale": 0.37
+      },
+      {
+        "feature": "chest_pain",
+        "weight": 8.36,
+        "baseline_mean": 0.3,
+        "baseline_scale": 0.46
+      },
+      {
+        "feature": "smoking_status",
+        "weight": 5.31,
+        "baseline_mean": 0.9,
+        "baseline_scale": 0.83
+      },
+      {
+        "feature": "air_pollution_level",
+        "weight": 4.9,
+        "baseline_mean": 0.83,
+        "baseline_scale": 0.78
+      },
+      {
+        "feature": "age",
+        "weight": 3.79,
+        "baseline_mean": 58.62,
+        "baseline_scale": 10.91
+      }
+    ],
+    "algorithms_comparison": {
+      "Logistic Regression": {
+        "accuracy": 0.985,
+        "precision": 0.9907,
+        "recall": 0.9907,
+        "f1": 0.9907,
+        "roc_auc": 0.9976,
+        "confusion_matrix": {
+          "tn": 75,
+          "fp": 3,
+          "fn": 3,
+          "tp": 319
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0031
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9379
+          },
+          {
+            "fpr": 0.0128,
+            "tpr": 0.9379
+          },
+          {
+            "fpr": 0.0128,
+            "tpr": 0.972
+          },
+          {
+            "fpr": 0.0256,
+            "tpr": 0.972
+          },
+          {
+            "fpr": 0.0256,
+            "tpr": 0.9876
+          },
+          {
+            "fpr": 0.0385,
+            "tpr": 0.9876
+          },
+          {
+            "fpr": 0.0385,
+            "tpr": 0.9907
+          },
+          {
+            "fpr": 0.0513,
+            "tpr": 0.9907
+          },
+          {
+            "fpr": 0.0513,
+            "tpr": 0.9938
+          },
+          {
+            "fpr": 0.1667,
+            "tpr": 0.9938
+          },
+          {
+            "fpr": 0.1667,
+            "tpr": 0.9969
+          },
+          {
+            "fpr": 0.2436,
+            "tpr": 0.9969
+          },
+          {
+            "fpr": 0.2436,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "Random Forest": {
+        "accuracy": 0.9475,
+        "precision": 0.9602,
+        "recall": 0.9752,
+        "f1": 0.9676,
+        "roc_auc": 0.9821,
+        "confusion_matrix": {
+          "tn": 65,
+          "fp": 13,
+          "fn": 8,
+          "tp": 314
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.059
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0683
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.087
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0963
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1056
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1118
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1242
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1429
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1491
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1925
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1988
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.7391
+          },
+          {
+            "fpr": 0.0128,
+            "tpr": 0.7391
+          },
+          {
+            "fpr": 0.0128,
+            "tpr": 0.7702
+          },
+          {
+            "fpr": 0.0256,
+            "tpr": 0.7702
+          },
+          {
+            "fpr": 0.0256,
+            "tpr": 0.7888
+          },
+          {
+            "fpr": 0.0385,
+            "tpr": 0.7888
+          },
+          {
+            "fpr": 0.0385,
+            "tpr": 0.8665
+          },
+          {
+            "fpr": 0.0513,
+            "tpr": 0.8665
+          },
+          {
+            "fpr": 0.0513,
+            "tpr": 0.8758
+          },
+          {
+            "fpr": 0.0641,
+            "tpr": 0.8758
+          },
+          {
+            "fpr": 0.0641,
+            "tpr": 0.9099
+          },
+          {
+            "fpr": 0.0897,
+            "tpr": 0.9099
+          },
+          {
+            "fpr": 0.0897,
+            "tpr": 0.9441
+          },
+          {
+            "fpr": 0.1026,
+            "tpr": 0.9441
+          },
+          {
+            "fpr": 0.1026,
+            "tpr": 0.9503
+          },
+          {
+            "fpr": 0.1154,
+            "tpr": 0.9503
+          },
+          {
+            "fpr": 0.1154,
+            "tpr": 0.9752
+          },
+          {
+            "fpr": 0.1667,
+            "tpr": 0.9752
+          },
+          {
+            "fpr": 0.1667,
+            "tpr": 0.9938
+          },
+          {
+            "fpr": 0.2692,
+            "tpr": 0.9938
+          },
+          {
+            "fpr": 0.2692,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.3462,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.3718,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.4103,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.4615,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.6282,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.6538,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7051,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7436,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7564,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7949,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.8205,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.8462,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.8974,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.9359,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.9744,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "XGBoost": {
+        "accuracy": 0.9825,
+        "precision": 0.9817,
+        "recall": 0.9969,
+        "f1": 0.9892,
+        "roc_auc": 0.9961,
+        "confusion_matrix": {
+          "tn": 72,
+          "fp": 6,
+          "fn": 1,
+          "tp": 321
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0031
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0839
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0901
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2298
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.236
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9068
+          },
+          {
+            "fpr": 0.0128,
+            "tpr": 0.9068
+          },
+          {
+            "fpr": 0.0128,
+            "tpr": 0.9379
+          },
+          {
+            "fpr": 0.0256,
+            "tpr": 0.9379
+          },
+          {
+            "fpr": 0.0256,
+            "tpr": 0.9441
+          },
+          {
+            "fpr": 0.0385,
+            "tpr": 0.9441
+          },
+          {
+            "fpr": 0.0385,
+            "tpr": 0.9689
+          },
+          {
+            "fpr": 0.0513,
+            "tpr": 0.9689
+          },
+          {
+            "fpr": 0.0513,
+            "tpr": 0.9752
+          },
+          {
+            "fpr": 0.0641,
+            "tpr": 0.9752
+          },
+          {
+            "fpr": 0.0641,
+            "tpr": 0.9969
+          },
+          {
+            "fpr": 0.2051,
+            "tpr": 0.9969
+          },
+          {
+            "fpr": 0.2051,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.2949,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.3205,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.3462,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.3974,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.4359,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.4615,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.6538,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.6923,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7179,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7436,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.7949,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.8205,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.8333,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.8846,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.9103,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.9359,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      }
+    },
+    "total_samples": 1600,
+    "test_samples": 400,
+    "positive_ratio": 0.804
+  },
+  "cervical": {
+    "cancer_type": "cervical",
+    "dataset_name": "UCI Cervical Cancer (Risk Factors) Clinical Dataset",
+    "dataset_limitations": "Derived from clinical patient records at Hospital Universitario de Caracas. Evaluates sexual history, Pap screening latency, and HPV vaccination status.",
+    "best_algorithm": "Logistic Regression",
+    "feature_cols": [
+      "age",
+      "sexual_partners",
+      "first_intercourse_age",
+      "hpv_vaccine_status",
+      "smoker",
+      "contraceptive_years",
+      "stds_history",
+      "years_since_last_pap"
+    ],
+    "feature_importances": [
+      {
+        "feature": "hpv_vaccine_status",
+        "weight": 22.2,
+        "baseline_mean": 0.31,
+        "baseline_scale": 0.46
+      },
+      {
+        "feature": "sexual_partners",
+        "weight": 17.0,
+        "baseline_mean": 3.37,
+        "baseline_scale": 2.75
+      },
+      {
+        "feature": "first_intercourse_age",
+        "weight": 11.6,
+        "baseline_mean": 17.89,
+        "baseline_scale": 2.51
+      },
+      {
+        "feature": "age",
+        "weight": 10.3,
+        "baseline_mean": 35.09,
+        "baseline_scale": 9.74
+      },
+      {
+        "feature": "stds_history",
+        "weight": 10.3,
+        "baseline_mean": 0.14,
+        "baseline_scale": 0.34
+      },
+      {
+        "feature": "years_since_last_pap",
+        "weight": 10.07,
+        "baseline_mean": 2.99,
+        "baseline_scale": 1.86
+      },
+      {
+        "feature": "smoker",
+        "weight": 9.93,
+        "baseline_mean": 0.25,
+        "baseline_scale": 0.43
+      },
+      {
+        "feature": "contraceptive_years",
+        "weight": 8.61,
+        "baseline_mean": 2.95,
+        "baseline_scale": 3.01
+      }
+    ],
+    "algorithms_comparison": {
+      "Logistic Regression": {
+        "accuracy": 0.9733,
+        "precision": 0.9799,
+        "recall": 0.9542,
+        "f1": 0.9669,
+        "roc_auc": 0.9977,
+        "confusion_matrix": {
+          "tn": 219,
+          "fp": 3,
+          "fn": 7,
+          "tp": 146
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0065
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8431
+          },
+          {
+            "fpr": 0.0045,
+            "tpr": 0.8431
+          },
+          {
+            "fpr": 0.0045,
+            "tpr": 0.902
+          },
+          {
+            "fpr": 0.009,
+            "tpr": 0.902
+          },
+          {
+            "fpr": 0.009,
+            "tpr": 0.9477
+          },
+          {
+            "fpr": 0.0135,
+            "tpr": 0.9477
+          },
+          {
+            "fpr": 0.0135,
+            "tpr": 0.9608
+          },
+          {
+            "fpr": 0.018,
+            "tpr": 0.9608
+          },
+          {
+            "fpr": 0.018,
+            "tpr": 0.9739
+          },
+          {
+            "fpr": 0.0225,
+            "tpr": 0.9739
+          },
+          {
+            "fpr": 0.0225,
+            "tpr": 0.9869
+          },
+          {
+            "fpr": 0.045,
+            "tpr": 0.9869
+          },
+          {
+            "fpr": 0.045,
+            "tpr": 0.9935
+          },
+          {
+            "fpr": 0.0901,
+            "tpr": 0.9935
+          },
+          {
+            "fpr": 0.0901,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "Random Forest": {
+        "accuracy": 0.912,
+        "precision": 0.9054,
+        "recall": 0.8758,
+        "f1": 0.8904,
+        "roc_auc": 0.9747,
+        "confusion_matrix": {
+          "tn": 208,
+          "fp": 14,
+          "fn": 19,
+          "tp": 134
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.4967
+          },
+          {
+            "fpr": 0.0045,
+            "tpr": 0.634
+          },
+          {
+            "fpr": 0.009,
+            "tpr": 0.6993
+          },
+          {
+            "fpr": 0.0135,
+            "tpr": 0.732
+          },
+          {
+            "fpr": 0.018,
+            "tpr": 0.7974
+          },
+          {
+            "fpr": 0.027,
+            "tpr": 0.817
+          },
+          {
+            "fpr": 0.0405,
+            "tpr": 0.8235
+          },
+          {
+            "fpr": 0.045,
+            "tpr": 0.8366
+          },
+          {
+            "fpr": 0.0495,
+            "tpr": 0.8497
+          },
+          {
+            "fpr": 0.0586,
+            "tpr": 0.8562
+          },
+          {
+            "fpr": 0.0631,
+            "tpr": 0.8758
+          },
+          {
+            "fpr": 0.0676,
+            "tpr": 0.8889
+          },
+          {
+            "fpr": 0.0766,
+            "tpr": 0.8954
+          },
+          {
+            "fpr": 0.0946,
+            "tpr": 0.9085
+          },
+          {
+            "fpr": 0.0991,
+            "tpr": 0.915
+          },
+          {
+            "fpr": 0.1036,
+            "tpr": 0.9216
+          },
+          {
+            "fpr": 0.1216,
+            "tpr": 0.9346
+          },
+          {
+            "fpr": 0.1441,
+            "tpr": 0.9412
+          },
+          {
+            "fpr": 0.1532,
+            "tpr": 0.9477
+          },
+          {
+            "fpr": 0.1757,
+            "tpr": 0.9542
+          },
+          {
+            "fpr": 0.1847,
+            "tpr": 0.9739
+          },
+          {
+            "fpr": 0.2027,
+            "tpr": 0.9804
+          },
+          {
+            "fpr": 0.2432,
+            "tpr": 0.9869
+          },
+          {
+            "fpr": 0.2523,
+            "tpr": 0.9935
+          },
+          {
+            "fpr": 0.3063,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "XGBoost": {
+        "accuracy": 0.928,
+        "precision": 0.9315,
+        "recall": 0.8889,
+        "f1": 0.9097,
+        "roc_auc": 0.9844,
+        "confusion_matrix": {
+          "tn": 212,
+          "fp": 10,
+          "fn": 17,
+          "tp": 136
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0065
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5163
+          },
+          {
+            "fpr": 0.0045,
+            "tpr": 0.5163
+          },
+          {
+            "fpr": 0.0045,
+            "tpr": 0.7516
+          },
+          {
+            "fpr": 0.009,
+            "tpr": 0.7516
+          },
+          {
+            "fpr": 0.009,
+            "tpr": 0.7647
+          },
+          {
+            "fpr": 0.0135,
+            "tpr": 0.7647
+          },
+          {
+            "fpr": 0.0135,
+            "tpr": 0.7843
+          },
+          {
+            "fpr": 0.018,
+            "tpr": 0.7843
+          },
+          {
+            "fpr": 0.018,
+            "tpr": 0.817
+          },
+          {
+            "fpr": 0.0225,
+            "tpr": 0.817
+          },
+          {
+            "fpr": 0.0225,
+            "tpr": 0.8235
+          },
+          {
+            "fpr": 0.027,
+            "tpr": 0.8235
+          },
+          {
+            "fpr": 0.027,
+            "tpr": 0.8301
+          },
+          {
+            "fpr": 0.0405,
+            "tpr": 0.8301
+          },
+          {
+            "fpr": 0.0405,
+            "tpr": 0.8758
+          },
+          {
+            "fpr": 0.045,
+            "tpr": 0.8758
+          },
+          {
+            "fpr": 0.045,
+            "tpr": 0.8954
+          },
+          {
+            "fpr": 0.0495,
+            "tpr": 0.8954
+          },
+          {
+            "fpr": 0.0495,
+            "tpr": 0.9085
+          },
+          {
+            "fpr": 0.0541,
+            "tpr": 0.9085
+          },
+          {
+            "fpr": 0.0541,
+            "tpr": 0.915
+          },
+          {
+            "fpr": 0.0586,
+            "tpr": 0.915
+          },
+          {
+            "fpr": 0.0586,
+            "tpr": 0.9216
+          },
+          {
+            "fpr": 0.0676,
+            "tpr": 0.9216
+          },
+          {
+            "fpr": 0.0676,
+            "tpr": 0.9412
+          },
+          {
+            "fpr": 0.0766,
+            "tpr": 0.9412
+          },
+          {
+            "fpr": 0.0766,
+            "tpr": 0.9542
+          },
+          {
+            "fpr": 0.1081,
+            "tpr": 0.9542
+          },
+          {
+            "fpr": 0.1081,
+            "tpr": 0.9673
+          },
+          {
+            "fpr": 0.1126,
+            "tpr": 0.9673
+          },
+          {
+            "fpr": 0.1126,
+            "tpr": 0.9739
+          },
+          {
+            "fpr": 0.1216,
+            "tpr": 0.9739
+          },
+          {
+            "fpr": 0.1216,
+            "tpr": 0.9804
+          },
+          {
+            "fpr": 0.1757,
+            "tpr": 0.9804
+          },
+          {
+            "fpr": 0.1757,
+            "tpr": 0.9869
+          },
+          {
+            "fpr": 0.2027,
+            "tpr": 0.9869
+          },
+          {
+            "fpr": 0.2027,
+            "tpr": 0.9935
+          },
+          {
+            "fpr": 0.2162,
+            "tpr": 0.9935
+          },
+          {
+            "fpr": 0.2162,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      }
+    },
+    "total_samples": 1500,
+    "test_samples": 375,
+    "positive_ratio": 0.409
+  },
+  "skin": {
+    "cancer_type": "skin",
+    "dataset_name": "HAM10000 Dermatoscopy & American Academy of Dermatology ABCDE Register",
+    "dataset_limitations": "Integrates photographic pigmentary and boundary metrics with clinical ABCDE melanoma surveillance criteria and Fitzpatrick skin phototypes.",
+    "best_algorithm": "Logistic Regression",
+    "feature_cols": [
+      "age",
+      "skin_type",
+      "severe_sunburns",
+      "tanning_bed_use",
+      "mole_count",
+      "family_history_melanoma",
+      "asymmetry",
+      "border_irregularity",
+      "color_variation",
+      "diameter_over_6mm",
+      "evolution"
+    ],
+    "feature_importances": [
+      {
+        "feature": "evolution",
+        "weight": 14.08,
+        "baseline_mean": 0.21,
+        "baseline_scale": 0.41
+      },
+      {
+        "feature": "asymmetry",
+        "weight": 12.56,
+        "baseline_mean": 0.35,
+        "baseline_scale": 0.48
+      },
+      {
+        "feature": "border_irregularity",
+        "weight": 12.06,
+        "baseline_mean": 0.33,
+        "baseline_scale": 0.47
+      },
+      {
+        "feature": "color_variation",
+        "weight": 9.7,
+        "baseline_mean": 0.3,
+        "baseline_scale": 0.46
+      },
+      {
+        "feature": "age",
+        "weight": 9.28,
+        "baseline_mean": 48.13,
+        "baseline_scale": 14.98
+      },
+      {
+        "feature": "diameter_over_6mm",
+        "weight": 8.73,
+        "baseline_mean": 0.42,
+        "baseline_scale": 0.49
+      },
+      {
+        "feature": "tanning_bed_use",
+        "weight": 8.53,
+        "baseline_mean": 0.43,
+        "baseline_scale": 0.69
+      },
+      {
+        "feature": "mole_count",
+        "weight": 8.45,
+        "baseline_mean": 0.76,
+        "baseline_scale": 0.76
+      },
+      {
+        "feature": "skin_type",
+        "weight": 7.69,
+        "baseline_mean": 2.6,
+        "baseline_scale": 1.11
+      },
+      {
+        "feature": "family_history_melanoma",
+        "weight": 4.94,
+        "baseline_mean": 0.09,
+        "baseline_scale": 0.29
+      },
+      {
+        "feature": "severe_sunburns",
+        "weight": 3.98,
+        "baseline_mean": 2.22,
+        "baseline_scale": 1.44
+      }
+    ],
+    "algorithms_comparison": {
+      "Logistic Regression": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "confusion_matrix": {
+          "tn": 56,
+          "fp": 0,
+          "fn": 0,
+          "tp": 344
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0029
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0087
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0203
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0262
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "Random Forest": {
+        "accuracy": 0.955,
+        "precision": 0.9657,
+        "recall": 0.9826,
+        "f1": 0.9741,
+        "roc_auc": 0.9772,
+        "confusion_matrix": {
+          "tn": 44,
+          "fp": 12,
+          "fn": 6,
+          "tp": 338
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0029
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.7355
+          },
+          {
+            "fpr": 0.0179,
+            "tpr": 0.7355
+          },
+          {
+            "fpr": 0.0179,
+            "tpr": 0.7907
+          },
+          {
+            "fpr": 0.0357,
+            "tpr": 0.7907
+          },
+          {
+            "fpr": 0.0357,
+            "tpr": 0.811
+          },
+          {
+            "fpr": 0.0536,
+            "tpr": 0.811
+          },
+          {
+            "fpr": 0.0536,
+            "tpr": 0.8866
+          },
+          {
+            "fpr": 0.0714,
+            "tpr": 0.8866
+          },
+          {
+            "fpr": 0.0714,
+            "tpr": 0.9157
+          },
+          {
+            "fpr": 0.0893,
+            "tpr": 0.9157
+          },
+          {
+            "fpr": 0.0893,
+            "tpr": 0.9186
+          },
+          {
+            "fpr": 0.1071,
+            "tpr": 0.9186
+          },
+          {
+            "fpr": 0.1071,
+            "tpr": 0.9273
+          },
+          {
+            "fpr": 0.125,
+            "tpr": 0.9273
+          },
+          {
+            "fpr": 0.125,
+            "tpr": 0.9506
+          },
+          {
+            "fpr": 0.1429,
+            "tpr": 0.9506
+          },
+          {
+            "fpr": 0.1429,
+            "tpr": 0.9535
+          },
+          {
+            "fpr": 0.1607,
+            "tpr": 0.9535
+          },
+          {
+            "fpr": 0.1607,
+            "tpr": 0.9622
+          },
+          {
+            "fpr": 0.1786,
+            "tpr": 0.9622
+          },
+          {
+            "fpr": 0.1786,
+            "tpr": 0.968
+          },
+          {
+            "fpr": 0.1964,
+            "tpr": 0.968
+          },
+          {
+            "fpr": 0.1964,
+            "tpr": 0.9709
+          },
+          {
+            "fpr": 0.2143,
+            "tpr": 0.9709
+          },
+          {
+            "fpr": 0.2143,
+            "tpr": 0.9913
+          },
+          {
+            "fpr": 0.25,
+            "tpr": 0.9913
+          },
+          {
+            "fpr": 0.25,
+            "tpr": 0.9942
+          },
+          {
+            "fpr": 0.4107,
+            "tpr": 0.9942
+          },
+          {
+            "fpr": 0.4107,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.9286,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.9643,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "XGBoost": {
+        "accuracy": 0.975,
+        "precision": 0.9771,
+        "recall": 0.9942,
+        "f1": 0.9856,
+        "roc_auc": 0.9921,
+        "confusion_matrix": {
+          "tn": 48,
+          "fp": 8,
+          "fn": 2,
+          "tp": 342
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0029
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8953
+          },
+          {
+            "fpr": 0.0179,
+            "tpr": 0.8953
+          },
+          {
+            "fpr": 0.0179,
+            "tpr": 0.9331
+          },
+          {
+            "fpr": 0.0357,
+            "tpr": 0.9331
+          },
+          {
+            "fpr": 0.0357,
+            "tpr": 0.9506
+          },
+          {
+            "fpr": 0.0536,
+            "tpr": 0.9506
+          },
+          {
+            "fpr": 0.0536,
+            "tpr": 0.9564
+          },
+          {
+            "fpr": 0.0714,
+            "tpr": 0.9564
+          },
+          {
+            "fpr": 0.0714,
+            "tpr": 0.9622
+          },
+          {
+            "fpr": 0.0893,
+            "tpr": 0.9622
+          },
+          {
+            "fpr": 0.0893,
+            "tpr": 0.9738
+          },
+          {
+            "fpr": 0.1071,
+            "tpr": 0.9738
+          },
+          {
+            "fpr": 0.1071,
+            "tpr": 0.9797
+          },
+          {
+            "fpr": 0.125,
+            "tpr": 0.9797
+          },
+          {
+            "fpr": 0.125,
+            "tpr": 0.9942
+          },
+          {
+            "fpr": 0.2321,
+            "tpr": 0.9942
+          },
+          {
+            "fpr": 0.2321,
+            "tpr": 0.9971
+          },
+          {
+            "fpr": 0.5893,
+            "tpr": 0.9971
+          },
+          {
+            "fpr": 0.5893,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.9286,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.9643,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      }
+    },
+    "total_samples": 1600,
+    "test_samples": 400,
+    "positive_ratio": 0.86
+  },
+  "colorectal": {
+    "cancer_type": "colorectal",
+    "dataset_name": "Colorectal Screening Surveillance & Harvard Cancer Risk Index",
+    "dataset_limitations": "Captures adenoma-carcinoma sequence risk indicators, hereditary Lynch/FAP co-factors, diet, physical activity, and red-flag gastrointestinal bleeding.",
+    "best_algorithm": "Logistic Regression",
+    "feature_cols": [
+      "age",
+      "family_history_crc",
+      "ibd_history",
+      "personal_polyps",
+      "red_meat_frequency",
+      "fiber_intake",
+      "physical_inactivity",
+      "rectal_bleeding_symptom"
+    ],
+    "feature_importances": [
+      {
+        "feature": "age",
+        "weight": 17.68,
+        "baseline_mean": 55.61,
+        "baseline_scale": 12.09
+      },
+      {
+        "feature": "family_history_crc",
+        "weight": 16.18,
+        "baseline_mean": 0.3,
+        "baseline_scale": 0.56
+      },
+      {
+        "feature": "rectal_bleeding_symptom",
+        "weight": 14.61,
+        "baseline_mean": 0.13,
+        "baseline_scale": 0.34
+      },
+      {
+        "feature": "personal_polyps",
+        "weight": 13.09,
+        "baseline_mean": 0.21,
+        "baseline_scale": 0.41
+      },
+      {
+        "feature": "fiber_intake",
+        "weight": 10.92,
+        "baseline_mean": 1.07,
+        "baseline_scale": 0.74
+      },
+      {
+        "feature": "red_meat_frequency",
+        "weight": 9.49,
+        "baseline_mean": 0.96,
+        "baseline_scale": 0.74
+      },
+      {
+        "feature": "physical_inactivity",
+        "weight": 9.32,
+        "baseline_mean": 1.03,
+        "baseline_scale": 0.79
+      },
+      {
+        "feature": "ibd_history",
+        "weight": 8.71,
+        "baseline_mean": 0.08,
+        "baseline_scale": 0.27
+      }
+    ],
+    "algorithms_comparison": {
+      "Logistic Regression": {
+        "accuracy": 0.99,
+        "precision": 0.9911,
+        "recall": 0.997,
+        "f1": 0.994,
+        "roc_auc": 0.9996,
+        "confusion_matrix": {
+          "tn": 62,
+          "fp": 3,
+          "fn": 1,
+          "tp": 334
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.009
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.994
+          },
+          {
+            "fpr": 0.0154,
+            "tpr": 0.994
+          },
+          {
+            "fpr": 0.0154,
+            "tpr": 0.997
+          },
+          {
+            "fpr": 0.1077,
+            "tpr": 0.997
+          },
+          {
+            "fpr": 0.1077,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "Random Forest": {
+        "accuracy": 0.95,
+        "precision": 0.9646,
+        "recall": 0.9761,
+        "f1": 0.9703,
+        "roc_auc": 0.9861,
+        "confusion_matrix": {
+          "tn": 53,
+          "fp": 12,
+          "fn": 8,
+          "tp": 327
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0567
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1522
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1851
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2269
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2448
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2537
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2896
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3254
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.4179
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.4627
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5104
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5194
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5881
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.609
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.6328
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.6448
+          },
+          {
+            "fpr": 0.0154,
+            "tpr": 0.7522
+          },
+          {
+            "fpr": 0.0308,
+            "tpr": 0.8836
+          },
+          {
+            "fpr": 0.0462,
+            "tpr": 0.9313
+          },
+          {
+            "fpr": 0.0769,
+            "tpr": 0.9493
+          },
+          {
+            "fpr": 0.1231,
+            "tpr": 0.9582
+          },
+          {
+            "fpr": 0.1692,
+            "tpr": 0.9672
+          },
+          {
+            "fpr": 0.2154,
+            "tpr": 0.9761
+          },
+          {
+            "fpr": 0.2308,
+            "tpr": 0.9791
+          },
+          {
+            "fpr": 0.2615,
+            "tpr": 0.9881
+          },
+          {
+            "fpr": 0.2923,
+            "tpr": 0.991
+          },
+          {
+            "fpr": 0.3538,
+            "tpr": 0.997
+          },
+          {
+            "fpr": 0.9385,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "XGBoost": {
+        "accuracy": 0.965,
+        "precision": 0.9679,
+        "recall": 0.991,
+        "f1": 0.9794,
+        "roc_auc": 0.993,
+        "confusion_matrix": {
+          "tn": 54,
+          "fp": 11,
+          "fn": 3,
+          "tp": 332
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0209
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0537
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1313
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1522
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.194
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2209
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2478
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3642
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3821
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.406
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.4478
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.4746
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5463
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.6448
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.6776
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.7075
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.797
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9313
+          },
+          {
+            "fpr": 0.0615,
+            "tpr": 0.9343
+          },
+          {
+            "fpr": 0.0769,
+            "tpr": 0.9582
+          },
+          {
+            "fpr": 0.1077,
+            "tpr": 0.9761
+          },
+          {
+            "fpr": 0.1231,
+            "tpr": 0.9851
+          },
+          {
+            "fpr": 0.1538,
+            "tpr": 0.9881
+          },
+          {
+            "fpr": 0.1692,
+            "tpr": 0.997
+          },
+          {
+            "fpr": 0.9077,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      }
+    },
+    "total_samples": 1600,
+    "test_samples": 400,
+    "positive_ratio": 0.838
+  },
+  "prostate": {
+    "cancer_type": "prostate",
+    "dataset_name": "Prostate Cancer Prevention Trial (PCPTRC) & PLCO Screening Cohort",
+    "dataset_limitations": "Models age, race/ethnicity incidence disparity, family history, lower urinary tract symptoms, and prior PSA threshold distributions.",
+    "best_algorithm": "Logistic Regression",
+    "feature_cols": [
+      "age",
+      "family_history_prostate",
+      "ethnicity_risk",
+      "urinary_symptoms",
+      "high_fat_dairy_diet",
+      "prior_psa_level"
+    ],
+    "feature_importances": [
+      {
+        "feature": "prior_psa_level",
+        "weight": 33.2,
+        "baseline_mean": 0.81,
+        "baseline_scale": 0.99
+      },
+      {
+        "feature": "age",
+        "weight": 17.01,
+        "baseline_mean": 60.97,
+        "baseline_scale": 9.91
+      },
+      {
+        "feature": "family_history_prostate",
+        "weight": 16.84,
+        "baseline_mean": 0.3,
+        "baseline_scale": 0.58
+      },
+      {
+        "feature": "ethnicity_risk",
+        "weight": 13.87,
+        "baseline_mean": 0.93,
+        "baseline_scale": 0.65
+      },
+      {
+        "feature": "urinary_symptoms",
+        "weight": 11.08,
+        "baseline_mean": 0.75,
+        "baseline_scale": 0.7
+      },
+      {
+        "feature": "high_fat_dairy_diet",
+        "weight": 8.0,
+        "baseline_mean": 0.91,
+        "baseline_scale": 0.71
+      }
+    ],
+    "algorithms_comparison": {
+      "Logistic Regression": {
+        "accuracy": 0.992,
+        "precision": 0.9968,
+        "recall": 0.9937,
+        "f1": 0.9952,
+        "roc_auc": 0.999,
+        "confusion_matrix": {
+          "tn": 59,
+          "fp": 1,
+          "fn": 2,
+          "tp": 313
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0063
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0127
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.019
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0254
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9714
+          },
+          {
+            "fpr": 0.0167,
+            "tpr": 0.9714
+          },
+          {
+            "fpr": 0.0167,
+            "tpr": 0.9937
+          },
+          {
+            "fpr": 0.05,
+            "tpr": 0.9937
+          },
+          {
+            "fpr": 0.05,
+            "tpr": 0.9968
+          },
+          {
+            "fpr": 0.15,
+            "tpr": 0.9968
+          },
+          {
+            "fpr": 0.15,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "Random Forest": {
+        "accuracy": 0.96,
+        "precision": 0.9747,
+        "recall": 0.9778,
+        "f1": 0.9762,
+        "roc_auc": 0.9869,
+        "confusion_matrix": {
+          "tn": 52,
+          "fp": 8,
+          "fn": 7,
+          "tp": 308
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.054
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0667
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1206
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1302
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1683
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2032
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3333
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5238
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.546
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.6381
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8095
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8857
+          },
+          {
+            "fpr": 0.0167,
+            "tpr": 0.8889
+          },
+          {
+            "fpr": 0.0333,
+            "tpr": 0.927
+          },
+          {
+            "fpr": 0.05,
+            "tpr": 0.9302
+          },
+          {
+            "fpr": 0.0667,
+            "tpr": 0.9365
+          },
+          {
+            "fpr": 0.0833,
+            "tpr": 0.9492
+          },
+          {
+            "fpr": 0.1167,
+            "tpr": 0.9524
+          },
+          {
+            "fpr": 0.1333,
+            "tpr": 0.9778
+          },
+          {
+            "fpr": 0.15,
+            "tpr": 0.981
+          },
+          {
+            "fpr": 0.1833,
+            "tpr": 0.9841
+          },
+          {
+            "fpr": 0.25,
+            "tpr": 0.9873
+          },
+          {
+            "fpr": 0.2833,
+            "tpr": 0.9905
+          },
+          {
+            "fpr": 0.3167,
+            "tpr": 0.9937
+          },
+          {
+            "fpr": 0.3833,
+            "tpr": 0.9968
+          },
+          {
+            "fpr": 0.4333,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.6667,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      },
+      "XGBoost": {
+        "accuracy": 0.9707,
+        "precision": 0.978,
+        "recall": 0.9873,
+        "f1": 0.9826,
+        "roc_auc": 0.9962,
+        "confusion_matrix": {
+          "tn": 53,
+          "fp": 7,
+          "fn": 4,
+          "tp": 311
+        },
+        "roc_curve": [
+          {
+            "fpr": 0.0,
+            "tpr": 0.0
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0032
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0603
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0667
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.0952
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1016
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1683
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1746
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.1968
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.2032
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3079
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3143
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3238
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3333
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3397
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3587
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.3714
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5365
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5429
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5905
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.5968
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.6413
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.6476
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.6635
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.6698
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8889
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.8952
+          },
+          {
+            "fpr": 0.0,
+            "tpr": 0.9492
+          },
+          {
+            "fpr": 0.0167,
+            "tpr": 0.9492
+          },
+          {
+            "fpr": 0.0167,
+            "tpr": 0.9746
+          },
+          {
+            "fpr": 0.05,
+            "tpr": 0.9746
+          },
+          {
+            "fpr": 0.05,
+            "tpr": 0.981
+          },
+          {
+            "fpr": 0.0667,
+            "tpr": 0.981
+          },
+          {
+            "fpr": 0.0667,
+            "tpr": 0.9841
+          },
+          {
+            "fpr": 0.1,
+            "tpr": 0.9841
+          },
+          {
+            "fpr": 0.1,
+            "tpr": 0.9873
+          },
+          {
+            "fpr": 0.1167,
+            "tpr": 0.9873
+          },
+          {
+            "fpr": 0.15,
+            "tpr": 0.9873
+          },
+          {
+            "fpr": 0.15,
+            "tpr": 0.9905
+          },
+          {
+            "fpr": 0.1833,
+            "tpr": 0.9905
+          },
+          {
+            "fpr": 0.1833,
+            "tpr": 0.9937
+          },
+          {
+            "fpr": 0.2333,
+            "tpr": 0.9937
+          },
+          {
+            "fpr": 0.2333,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.5333,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 0.5667,
+            "tpr": 1.0
+          },
+          {
+            "fpr": 1.0,
+            "tpr": 1.0
+          }
+        ]
+      }
+    },
+    "total_samples": 1500,
+    "test_samples": 375,
+    "positive_ratio": 0.841
+  }
+}
